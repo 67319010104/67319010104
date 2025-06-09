@@ -1,0 +1,99 @@
+body {
+  font-family: 'Noto Sans Thai', sans-serif;
+  margin: 0;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2.5em;
+}
+
+h2 {
+  margin-left: 40px;
+  margin-top: 40px;
+  font-size: 1.5em;
+  color: #444;
+}
+
+.menu-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 240px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+  text-align: center;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.price {
+  color: #00a38c;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.dropdown-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+select {
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.tab-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.tab {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #eee;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab.active {
+  background-color: #00a38c;
+  color: white;
+  font-weight: bold;
+}
+
+.tab:hover {
+  background-color: #00c0a3;
+  color: white;
+}
