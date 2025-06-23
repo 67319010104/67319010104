@@ -1,0 +1,127 @@
+/* ฟอนต์และโครงสร้างเบื้องต้น */
+body {
+  font-family: 'Sarabun', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #222;
+}
+
+/* ส่วน Header */
+.header {
+  background-color: #00695C;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+/* ปุ่มเข้าสู่ระบบ & สมัครสมาชิก */
+.header .buttons button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: #00695C;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header .buttons button:hover {
+  background-color: #e0f2f1;
+}
+
+/* Navbar หมวดหมู่ */
+.navbar {
+  background-color: #004d40;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #00796B;
+}
+
+/* กล่องค้นหา */
+.search-box {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #e0f2f1;
+}
+
+.search-box input[type="text"] {
+  padding: 8px;
+  width: 300px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+.search-box button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  background-color: #00796B;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* เนื้อหาหลัก */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* หัวข้อ */
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #00695C;
+}
+
+/* สไลด์สินค้า */
+.slider {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ส่วนท้าย Footer */
+footer {
+  background-color: #00695C;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
