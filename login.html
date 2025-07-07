@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>สมัครสมาชิก</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    /* พื้นหลังภาพ */
+    body {
+      font-family: 'Sarabun', sans-serif;
+      background: url('https://png.pngtree.com/background/20211217/original/pngtree-game-abstract-green-luminous-line-background-picture-image_1596644.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* กล่องฟอร์ม */
+    .form-container {
+      background: rgba(8, 188, 201, 0.9);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      width: 400px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #c21b1b;
+    }
+
+    label {
+      font-weight: bold;
+      margin-top: 10px;
+      display: block;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .gender label {
+      font-weight: normal;
+      margin-right: 10px;
+    }
+
+    .checkbox {
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #388e3c;
+    }
+  </style>
+</head>
+<body>
+
+  <form class="form-container">
+    <h2>📝 สมัครสมาชิก</h2>
+
+    <label for="fullname">👤 ชื่อ-นามสกุล</label>
+    <input type="text" id="fullname" required>
+
+    <label for="email">📧 อีเมล</label>
+    <input type="email" id="email" required>
+
+    <label for="password">🔒 รหัสผ่าน</label>
+    <input type="password" id="password" required>
+
+    <label for="confirm-password">🔒 ยืนยันรหัสผ่าน</label>
+    <input type="password" id="confirm-password" required>
+
+    <label>⚧️ เพศ</label>
+    <div class="gender">
+      <label><input type="radio" name="gender" required> 👨 ชาย</label>
+      <label><input type="radio" name="gender"> 👩 หญิง</label>
+      <label><input type="radio" name="gender"> ⚧️ อื่นๆ</label>
+    </div>
+
+    <label for="dob">🎂 วันเกิด</label>
+    <input type="date" id="dob" required>
+
+    <div class="checkbox">
+      <input type="checkbox" id="agree" required>
+      <label for="agree">✅ ฉันยอมรับ <a href="#">ข้อตกลงการใช้งาน</a></label>
+    </div>
+
+    <button type="submit"> สมัครสมาชิก</button>
+  </form>
+
+</body>
+</html>
